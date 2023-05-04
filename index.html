@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El ahorcado</title>
+    <script src="/src.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JUEGO DEL AHORCADO</h1>
+      <ul class="ayuda">
+        <li>Ayuda y soporte</li>
+      </ul>
+    </header>
+
+    <main>
+      <h2 class="start">¡Que empiece el juego!</h2>
+      <section class="section1">
+        <h3>intentos restantes: <span id="intentos">6</span></h3>
+        <ul>
+          <li class="etiqueta">
+            <label for="name">Introduce una letra:</label>
+            <input id="letra" maxlength="1" type="text" id="name" required />
+            <button id="comprobar">comprobar</button>
+            <p id="output"></p>
+          </li>
+        </ul>
+        <section id="img">
+          <img src="./img/ahorcado-1.jpeg" alt="imagen del ahorcado" />
+        </section>
+      </section>
+    </main>
+    <footer>Copyright || HACK A BOSS</footer>
+  </body>
+</html>
