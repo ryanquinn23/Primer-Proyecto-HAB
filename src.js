@@ -1,11 +1,12 @@
 'use strict';
 
+
 String.prototype.replaceAt = function (i, character) {
   return (
     this.substring(0, i) + character + this.substring(i + character.length)
   );
 };
-
+//creamos una array de palabras , para los jugadores
 const palabras = ['casa', 'algebra', 'chupete', 'horchata', 'coche'];
 
 const palabra = palabras[Math.floor(Math.random() * palabras.length)];
